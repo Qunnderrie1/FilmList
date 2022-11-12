@@ -1,19 +1,31 @@
+import React from 'react'
+import { BrowserRouter , NavLink , Routes , Route } from 'react-router-dom';
+import { HomePage , FilmsList } from './pages/index.js';
+import './App.css'
 
-import './App.css';
-import FilmsList from './Components/FilmsList.jsx';
-import Header from '../src/Components/Header.jsx';
-import { useState } from 'react';
-
-function App() {
-  
-
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <FilmsList />
-    </div>
+    <BrowserRouter>
 
-  );
+    <nav className='navBarContainer'>
+        <ul className='navItems'>
+            <li>
+                <NavLink to='/' >Home</NavLink>
+            </li>
+            <li>/</li>
+            <li>
+                <NavLink to='/films'>Films</NavLink>
+            </li>
+        </ul>
+    </nav>
+    <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/films' element={<FilmsList /> } />
+    </Routes>
+
+  </BrowserRouter>
+
+  )
 }
 
 export default App;

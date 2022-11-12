@@ -3,6 +3,34 @@
   flex-direction: column;
   justify-content: center;
 }
+.navItems{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  text-decoration: none;
+  margin: 0;
+
+}
+a{
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+}
+a:hover{
+  color: rgb(24, 69, 151);
+}
+.navBarContainer{
+  background-color: cornflowerblue;
+  padding: 20px;
+  color: white;
+}
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 .formContainer{
   display: flex;
   justify-content: center;
@@ -14,12 +42,50 @@
   margin: 0px 0px 40px 0px;
 }
 .movieList{
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap:  40px 10px;
 
+
+}
+.movieList ul{
+  min-width: 400px;
+  text-align: center;
+
+  padding: 0;
+}
+.movieList li{
+  list-style-type: none;
+  font-size: 20px;
+
+
+
+  padding: 5px;
+}
+.movieList li{
+  border: 1px solid #000;
+  border-collapse:separate;
+
 }
 
+
+label{
+  margin-top: 80px;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+.form-group{
+  text-align: center;
+}
+.form-group select{
+  margin-top: 10px;
+}
 h1{
   font-size: 1.5rem;
   text-align: center;
