@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Header = () =>
+function Header()
+
 {
   return (
     <div className='HeaderContainer container-fluid shadow-md' >
@@ -8,6 +9,5 @@ const Header = () =>
     </div>
   )
 }
-
 
 export default Header;
